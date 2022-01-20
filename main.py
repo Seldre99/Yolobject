@@ -74,7 +74,7 @@ class KivyCamera(Image):
         for i in range(len(boxes)):
             if i in indexes:
                 x, y, w, h = boxes[i]
-                label = str(classes[class_ids[i]]).upper()
+                label = "{}: {:.4f}".format(classes[class_ids[i]].upper(), confs[i])
                 color = colors[i]
                 cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
                 cv2.putText(img, label, (x, y - 5), cv2.FONT_ITALIC, 1, color, 1)
