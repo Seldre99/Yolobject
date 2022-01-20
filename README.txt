@@ -5,7 +5,7 @@ Nelle impostazioni del progetto importa le seguenti librerie: kivy, opencv-pytho
 
 SE VUOI CAMBIARE IN YOLOV3
 Scarica i file wrights e cfg dal sito: https://pjreddie.com/darknet/yolo/
-Importali nel progetto *Elimina i precedenti di YoloTiny*
+Importali nel progetto *Elimina i precedenti di Yolov3-Tiny*
 Modifica il contenuto di cv2.dnn.readNet (line 33) con i nomi dei file che hai appena scaricato (prima weights poi cfg)
 
 Have fun!!
